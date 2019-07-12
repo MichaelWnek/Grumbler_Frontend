@@ -1,0 +1,51 @@
+/* .restShowMain {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px 200px 100%;
+    grid-template-areas: 
+      "header header"
+      "details details"
+      "inspections complaints";
+    height: 100%;
+} */
+
+.restShowMain {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 100%;
+    grid-template-areas: 
+      "header header"
+      "inspections complaints";
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.restHeader {
+    grid-area: header;
+    color: red;
+    text-align: center;
+    border: 3px solid red;
+    padding: 0 auto;
+}
+
+.restDetails{
+    grid-area: details;
+    color: blue;
+    text-align: center;
+    border: 3px solid blue;
+}
+.restInspections {
+    grid-area: inspections;
+    color: green;
+    text-align: center;
+    border: 3px solid green;
+    height: 100%;
+}
+.restComplaints {
+    grid-area: complaints;
+    color: purple;
+    text-align: center;
+    border: 3px solid purple;
+    height: 100%;
+}
